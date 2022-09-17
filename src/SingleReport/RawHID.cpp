@@ -41,6 +41,10 @@ static const uint8_t  _hidReportDescriptorRawHID[] PROGMEM = {
     0x09, 0x01,                  /* usage */
     0x81, 0x02,                  /* Input (array) */
 
+    0x95, RAWHID_TX_SIZE,        /* report count TX */
+    0x09, 0x00,                  /* usage */
+    0xB1, 0x02,                  /* Feature (array) */
+
     0x95, RAWHID_RX_SIZE,        /* report count RX */
     0x09, 0x02,                  /* usage */
     0x91, 0x02,                  /* Output (array) */
